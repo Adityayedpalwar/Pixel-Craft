@@ -16,29 +16,37 @@ body {
 /* Navbar Styles */
 .navbar {
     background-color: black;
-    align-item:center;    
-    padding: 0px 0;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom:10px
+    padding: 10px;
 }
+
 .navbar .container {
-    display:PixelCraft;
+    display: flex; /* fixed from PixelCraft */
     justify-content: space-between;
     align-items: center;
     background-color: #f02b50;
-    padding:5px;
-    margin-right:270px;
-    border-radius:70px;                }
+    padding: 5px 20px;
+    border-radius: 70px;
 }
-.nav-links li {
-    margin: 0 15px;
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* spacing between links */
+    margin: 0;
+    padding: 0;
 }
-.nav-links a:hover {
+
+.nav-links a {
+    color: white;
     text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
     background-color: #fff000;
-    margin-right:300px;
-    color: black; 
+    color: black;
 }
 /* Hero Section Styles */
 .hero {
