@@ -158,7 +158,7 @@ animation: hero-background-animation 3s linear infinite;
     width: 100vw;
     height: 100vh;
     padding:100px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     background: black;
 }
