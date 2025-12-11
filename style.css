@@ -57,6 +57,39 @@ body {
     color: white;
 animation: hero-background-animation 3s linear infinite; 
 }
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* BLURRED FULL-SCREEN BG LAYER */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('BG.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px; /* your 1cm² approx */
+    
+    filter: blur(15px);
+    transform: scale(1.1);  /* fixes blur cropping */
+    z-index: 1;
+}
+
+/* TEXT + BUTTON LAYER */
+.hero .container,
+.hero h1,
+.hero .btn {
+    position: relative;
+    z-index: 2;
+}
 
 
 @keyframes hero-background-animation {
