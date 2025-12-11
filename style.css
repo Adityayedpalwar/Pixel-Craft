@@ -84,8 +84,9 @@ animation: hero-background-animation 3s linear infinite;
 
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 10px;
     margin-bottom: 20px;
+    backdrop-filter:blur(100px);
 }
 
 .hero .btn {
