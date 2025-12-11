@@ -64,8 +64,9 @@ animation: hero-background-animation 3s linear infinite;
 
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 10px;
     margin-bottom: 20px;
+    backdrop-filter: blur(10px);
 }
 
 .hero .btn {
@@ -74,11 +75,13 @@ animation: hero-background-animation 3s linear infinite;
     color: black;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;    
+    border-radius: 5px; 
+    backdrop-filter: blur(10px);
 }
 
 .hero .btn:hover {
     background-color: gold;
+    backdrop-filter: blur(10px);
 }
 /* Portfolio Section Styles */
 .portfolio {
