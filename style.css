@@ -17,6 +17,7 @@ body {
 .navbar {
     background-color: black;
     color: #000000;
+    align-item:center;    
     padding: 0px 0;
     margin-left: 10px;
     margin-top: 10px;
