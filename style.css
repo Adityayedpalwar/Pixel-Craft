@@ -136,28 +136,17 @@ animation: hero-background-animation 3s linear infinite;
 :fullscreen video {
     width: 100vw;
     height: 100vh;
-    object-fit: contain;
+    object-fit: none;
     background: black;
 }
 
 .portfolio-item img,
 .portfolio-item video {
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
 }
 
 .portfolio-item img:hover,
 .portfolio-item video:hover {
     transform: scale(1.02);
-}
-
-
-
-:fullscreen img,
-:fullscreen video {
-    width: 100vw;
-    height: 100vh;
-    object-fit:none;
-    object-position: center;
-    background: black;
 }
