@@ -107,7 +107,7 @@ animation: hero-background-animation 3s linear infinite;
 /* TEXT + BUTTON LAYER */
 .hero .container,
 .hero h1,
-.hero .btn {
+.hero.btn {
     position: relative;
     z-index: 2;
 }
@@ -125,7 +125,7 @@ animation: hero-background-animation 3s linear infinite;
     backdrop-filter: blur(10px);
 }
 
-.hero .btn {
+.hero.btn {
     padding: 10px 20px;
     background-color: #f02b50;
     color: black;
@@ -135,7 +135,7 @@ animation: hero-background-animation 3s linear infinite;
     backdrop-filter: blur(10px);
 }
 
-.hero .btn:hover {
+.hero.btn:hover {
     background-color: gold;
     backdrop-filter: blur(10px);
 }
