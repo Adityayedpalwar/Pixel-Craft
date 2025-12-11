@@ -57,34 +57,7 @@ body {
     color: white;
 animation: hero-background-animation 3s linear infinite; 
 }
-.hero {
-    position: relative;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    overflow: hidden;
-}
 
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url('BG.png') center/cover no-repeat;
-    filter: blur(15px);
-    transform: scale(1.1); /* Removes blur cropping */
-    z-index: 1;
-}
-
-.hero .container,
-.hero h1,
-.hero .btn {
-    position: relative;
-    z-index: 2;     /* Text stays on top, NOT blurred */
-}
-    
 
 @keyframes hero-background-animation {
     from { background-position: 0% 50%; }
